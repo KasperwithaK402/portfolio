@@ -1,0 +1,142 @@
+    <!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+.topnav .icon {
+  display: none;
+}
+#wrapper {
+        min-width: 375px;
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+}
+header {
+        display: flex;
+        justify-content: flex-end;
+    }
+nav {
+        
+    }
+main {
+        
+    } 
+section {
+    margin-top: 25px; 
+    margin-bottom: 50px;    
+    }
+footer {
+    display: flex;
+    justify-content: center;
+    }    
+    
+/* The media query below (lines 46-66 allow for the responsive nav) */      
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }  
+}
+/* Added a new, simple media query; minimum pixel at 784 */    
+@media screen and (min-width:784px){
+    p {
+    padding-left: 100px;
+    padding-right: 100px;    
+    }
+}
+</style>
+</head>
+<body>
+<div id="wrapper"><!-- Added an opening DIV ID here-->
+    <header align="center"><img src="https://cdn.discordapp.com/attachments/1042691328187838516/1348898939440467979/Capture.PNG?ex=67d12388&is=67cfd208&hm=5db63d298eb435e9ddbec4ebc5b135139d4c5ebb0e7a65b31b6bb572cd0c90a0&" height="150px" /></header><!-- Added an opening and closing < header >; I didn't need to-->
+<nav><!-- Added an opening and closing < nav > -->
+<div class="topnav" id="myTopnav">
+  <a href="#" class="active">Home</a>
+  <a href="#a">Typography</a>
+  <a href="#b">Production</a>
+  <a href="#c">Interactive</a>   
+  <a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+    <i class="fa fa-bars"></i>
+  </a>
+    </div></nav>    
+<main><!-- Added an opening and closing < main >; I didn't need to-->
+<img src="links/me.jpg" width="100%"/></main>
+    <article><!-- Added an opening and closing < article >; I didn't need to-->
+        <p>Hello! My name is Hunter and I am a graphic design student at Oregon State University. Below are three of my works that I am most proud of from my time here so far. One is from Typography, another is from Production, and the last one is from Interactive. These pieces best display the skills I have gained during this academic journey. </p>
+     
+        </article>
+    <hr width="100%">
+    <section id="a">
+    <img src="links/1.png" width="100%"/>
+    <p>This is my final for Typography 1, my booklet of popular and impactful fonts in the world of design. It was difficult to pick out just three to focus on, but I think my choices were ultimately pretty solid and covered a wide range of impact despite the small number. I was also very proud of the examples I sighted in this project.</p>    
+    </section>
+   <hr width="100%">
+    <section id="b">
+    <img src="links/2.jpg" width="100%"/>
+    <p>This is one of my production assignments, called a Triptych. It is an exercise in splitting an image into multiple parts and playing with color and division between the pieces. My final product for this project is so pleasing to look at for me that I wouldn't mind framing it to be honest. </p>    
+    </section>
+ <hr width="100%">
+    <section id="c">
+    <img src="links/3.jpg" width="100%"/>
+    <p>This is my Interactive Design project ASGN-E, in which I was instructed to make a website about an influential and relevant professional graphic designer. I chose April Grieman due to her legendary work in previous decades as well as massive amount of experience I could draw from for my site.</p>    
+    </section>
+
+    <footer>Website created by Hunter.</footer><!-- Added an opening and closing < footer >; I didn't need to-->
+</div>
+    
+<!-- Script stays outside of my wrapper id-->
+<script> 
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+</body>
+</html>
